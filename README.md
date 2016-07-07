@@ -5,6 +5,40 @@
 
 React Native Firebase Crash Report With Custom Log
 
+## Usage
+
+```javascript
+
+import FirebaseCrash from 'react-native-firebase-crash-report';
+
+/*
+ * Create custom log messages that will be included in the crash report
+ */
+
+FirebaseCrash.log('User logged in');
+
+/*
+ * Create custom log messages that will be included in the crash report and output to logcat/NSLog
+ */
+
+FirebaseCrash.logcat('User logged in');
+
+// Android only
+// Params:
+// - message: string, required
+// - debug level: int, optional, default 3 (https://developer.android.com/reference/android/util/Log.html)
+// - tag: string, optional, default 'RNFirebaseCrashReport'
+FirebaseCrash.logcat('User logged in', 3, 'MyTag');
+
+/*
+ * Android only
+ * Report errors on demand
+ */
+
+FirebaseCrash.report('A weird thing just happened...');
+
+```
+
 ## Installation
 
 - Install node module
@@ -119,40 +153,6 @@ IMAGE
 
 ```gradle
 apply plugin: 'com.google.gms.google-services'
-```
-
-## Usage
-
-```javascript
-
-import FirebaseCrash from 'react-native-firebase-crash-report';
-
-/*
- * Create custom log messages that will be included in the crash report
- */
-
-FirebaseCrash.log('User logged in');
-
-/*
- * Create custom log messages that will be included in the crash report and output to logcat/NSLog
- */
-
-FirebaseCrash.logcat('User logged in');
-
-// Android only
-// Params:
-// - message: string, required
-// - debug level: int, optional, default 3 (https://developer.android.com/reference/android/util/Log.html)
-// - tag: string, optional, default 'RNFirebaseCrashReport'
-FirebaseCrash.logcat('User logged in', 3, 'MyTag');
-
-/*
- * Android only
- * Report errors on demand
- */
-
-FirebaseCrash.report('A weird thing just happened...');
-
 ```
 
 ## Contributing
