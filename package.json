@@ -1,0 +1,35 @@
+{
+  "name": "react-native-firebase-crash-report",
+  "version": "1.0.0",
+  "description": "React Native Firebase Crash Report",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ianlin/react-native-firebase-crash-report.git"
+  },
+  "keywords": [
+    "React",
+    "ReactNative",
+    "Firebase",
+    "Crash",
+    "Crash Report",
+    "Custom Log",
+    "Crash Custom Log",
+    "Crash Report Custom Log"
+  ],
+  "author": "Ian Yu-Hsun Lin <ianyuhsunlin@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ianlin/react-native-firebase-crash-report/issues"
+  },
+  "homepage": "https://github.com/ianlin/react-native-firebase-crash-report#readme",
+  "peerDependencies": {
+    "react-native": ">=0.19.0"
+  },
+  "devDependencies": {
+    "react-native": ">=0.19.0"
+  }
+}
