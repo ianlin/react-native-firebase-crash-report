@@ -1,5 +1,8 @@
 # React Native Firebase Crash Report
 
+[![npm version](https://badge.fury.io/js/react-native-firebase-crash-report.svg)](https://badge.fury.io/js/react-native-firebase-crash-report)
+[![npm downloads](https://img.shields.io/npm/dm/react-native-firebase-crash-report.svg?maxAge=2592000)](https://img.shields.io/npm/dm/react-native-firebase-crash-report.svg?maxAge=2592000)
+
 React Native Firebase Crash Report With Custom Log
 
 ## Installation
