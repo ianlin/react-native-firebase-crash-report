@@ -136,7 +136,7 @@ For more information please visit [Set Up Crash Reporting For Android][2]
 
 ### Upgrade Google Play Services and Google Repository
 
-IMAGE
+![Upgrade Google Play Services and Google Repository](https://github.com/ianlin/react-native-firebase-crash-report/blob/master/img/upgrade_play_services.png)
 
 ### Add Google Services
 
