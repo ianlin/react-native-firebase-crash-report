@@ -13,7 +13,7 @@
 #import "RCTEventDispatcher.h"
 #import "RCTUtils.h"
 
-#import "Firebase.h";
+@import FirebaseCrash;
 
 @implementation RNFirebaseCrashReport
 
