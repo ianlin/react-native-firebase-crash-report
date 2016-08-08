@@ -9,11 +9,9 @@ import com.google.firebase.crash.FirebaseCrash;
 
 public class RNFirebaseCrashReportModule extends ReactContextBaseJavaModule implements LifecycleEventListener {
     private final static String TAG = RNFirebaseCrashReportModule.class.getCanonicalName();
-    private static ReactApplicationContext reactContext;
 
-    public RNFirebaseCrashReportModule(ReactApplicationContext _reactContext) {
-        super(_reactContext);
-        reactContext = _reactContext;
+    public RNFirebaseCrashReportModule(ReactApplicationContext reactContext) {
+        super(reactContext);
         reactContext.addLifecycleEventListener(this);
     }
 
