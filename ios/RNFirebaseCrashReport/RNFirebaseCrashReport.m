@@ -31,4 +31,10 @@ RCT_EXPORT_METHOD(logcat:(NSString *)message)
     FIRCrashNSLog(message);
 }
 
+RCT_EXPORT_METHOD(report:(NSString *)message)
+{
+    FIRCrashLog(message);
+    assert(NO);
+}
+
 @end

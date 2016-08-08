@@ -20,9 +20,6 @@ export default class FirebaseCrashReport {
     }
 
     static report(message) {
-        if (Platform.OS === 'android') {
-            _FirebaseCrashReport.report(message);
-        } else {
-        }
+        _FirebaseCrashReport.report(message);
     }
 }
