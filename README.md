@@ -5,6 +5,10 @@
 
 React Native Firebase Crash Report With Custom Log
 
+## Version
+
+If you're using React Native >= 0.40, make sure to use `react-native-firebase-crash-report` >= **1.2.0**
+
 ## Usage
 
 ```javascript
