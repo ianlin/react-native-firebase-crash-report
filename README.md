@@ -45,13 +45,13 @@ FirebaseCrash.report('A weird thing just happened...');
 
 ## Installation
 
-- Install node module
+### Install node module
 
 ```bash
 npm install --save react-native-firebase-crash-report
 ```
 
-- Linking libraries
+### Linking libraries
 
 ```bash
 rnpm link react-native-firebase-crash-report
@@ -157,6 +157,49 @@ For more information please visit [Set Up Crash Reporting For Android][2]
 
 ```gradle
 apply plugin: 'com.google.gms.google-services'
+```
+
+### (Optional) Manually linking libraries
+
+- **app/build.gradle**
+
+```gradle
+dependencies {
+  ...
+  compile project(':react-native-firebase-analytics')
+  compile project(':react-native-firebase-crash-report') <-- add this
+  ...
+}
+```
+
+- **settings.gradle**
+
+```gradle
+include ':react-native-firebase-analytics'
+project(':react-native-firebase-analytics').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-firebase-analytics/android')
+
+// add everything below this
+include ':react-native-firebase-crash-report'
+project(':react-native-firebase-crash-report').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-firebase-crash-report/android')
+```
+
+- **MainApplication.java**
+
+```gradle
+...
+import com.ianlin.RNFirebaseCrashReport.RNFirebaseCrashReportPackage; <-- add this
+...
+
+@Override
+protected List<ReactPackage> getPackages() {
+  return Arrays.<ReactPackage>asList(
+    new MainReactPackage(),
+    new FIRAnalyticsPackage(),
+    ...
+    new RNFirebaseCrashReportPackage(), <-- add this
+    ...
+  );
+}
 ```
 
 ## Contributing
