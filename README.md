@@ -35,8 +35,9 @@ FirebaseCrash.logcat('User logged in');
 FirebaseCrash.logcat('User logged in', 3, 'MyTag');
 
 /*
- * Android only
  * Report errors on demand
+ *
+ * iOS Note: calling this API on iOS will result in app crash
  */
 
 FirebaseCrash.report('A weird thing just happened...');
