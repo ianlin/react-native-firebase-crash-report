@@ -1,6 +1,6 @@
 {
   "name": "react-native-firebase-crash-report",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "React Native Firebase Crash Report",
   "main": "index.js",
   "scripts": {
