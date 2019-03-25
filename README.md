@@ -5,6 +5,11 @@
 
 React Native Firebase Crash Report With Custom Log
 
+**--- This project is deprecated. Please migrate to Firebase Crashlytics ---**
+
+* [Firebase Crashlytics](https://firebase.google.com/docs/crashlytics/)  
+* [react-native-firebase](https://github.com/invertase/react-native-firebase)  
+
 ## Version
 
 If you're using React Native >= 0.40, make sure to use `react-native-firebase-crash-report` >= **1.2.0**
@@ -203,9 +208,8 @@ protected List<ReactPackage> getPackages() {
 }
 ```
 
-## Contributing
-
-Any pull requests, issue reports and suggestion are highly welcome.
+## Original Author:
+[![ianlin](https://avatars1.githubusercontent.com/u/914406?s=48)](https://github.com/ianlin)
 
 ## License
 
